@@ -1,0 +1,13 @@
+<launch>
+
+	<node pkg="rosbasic" type="publisher" name="publisher_node" output="screen" required="true" />
+	<node pkg="rosbasic" type="subscriber" name="subscriber_node" output="screen" required="true" />
+	<!-- <node pkg="rqt_graph" type="rqt_graph" name="rqt_graph_node" output="screen" required="true" /> -->
+	<!-- <node pkg="rqt_console" type="rqt_console" name="rqt_console_node" output="screen" required="true" /> -->
+	<!-- <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure_node" output="screen" required="true" /> -->
+	<!-- <node pkg="rqt_topic" type="rqt_topic" name="rqt_topic_node" output="screen" required="true" /> -->
+	<!-- <node pkg="rqt_runtime_monitor" type="rqt_runtime_monitor" name="rqt_runtime_monitor_node" output="screen" required="true" /> -->
+	<!-- <node pkg="rqt_robot_monitor" type="rqt_robot_monitor" name="rqt_robot_monitor_node" output="screen" required="true" /> -->
+	<!-- <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui_node" output="screen" required="true" /> -->
+
+</launch>

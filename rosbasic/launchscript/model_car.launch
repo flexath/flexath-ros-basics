@@ -1,0 +1,16 @@
+<launch>
+
+	<include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+
+	<!-- Convert urdf model file and put on parameter server -->
+  	<!-- <param name="robot_description" textfile="$(find rosbasic)/urdf/car.urdf"/> -->
+
+  	<!-- Convert xacro model file and put on parameter server -->
+	<!-- <param name="robot_description" command="$(find xacro)/xacro '$(find rosbasic)/xacro/car.xacro'" /> -->
+
+	<param name="robot_description" command="$(find xacro)/xacro --inorder '$(find roszbasic)/xacro/car.xacro'" />
+
+  	<!-- Spawn a model into Gazebo -->
+  	<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model car" />
+
+</launch>

@@ -1,0 +1,7 @@
+<launch>
+
+	<node pkg="rospcl" type="pcl_read" name="pcl_reading_node" output="screen" required="true" />
+	<node pkg="rospcl" type="pcl_filtering" name="pcl_filtering_node" output="screen" required="true" />
+	<node pkg="rviz" type="rviz" name="rviz" output="screen" required="true" args="-d $(find rospcl)/rviz/pcl_rviz.rviz" />
+
+</launch>

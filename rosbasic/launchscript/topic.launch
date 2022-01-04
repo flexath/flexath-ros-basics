@@ -1,0 +1,7 @@
+<launch>
+
+	<node pkg="rosbasic" type="publisher.py" name="publisher_hello_node" output="screen" required="true" />
+	<node pkg="rosbasic" type="subscriber.py" name="subscriber_hello_node" output="screen" required="true" />
+	<node pkg="rqt_graph" type="rqt_graph" name="rqt_graph_node" output="screen" required="true" />
+
+</launch>

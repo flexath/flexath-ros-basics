@@ -1,0 +1,10 @@
+#goal definition
+float64 desiredX
+float64 desiredY
+---
+#result definition
+float64 angleOne
+float64 angleTwo
+---
+#feedback
+float64 current_object

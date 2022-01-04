@@ -1,0 +1,35 @@
+<launch>
+
+	<group ns="topic">
+
+		<node ns="pb" pkg="rosbasic" type="publisher.py" name="publisher_hello_node" output="screen" respawn="true" required="false" respawn_delay="10" />
+		<node ns="sb" pkg="rosbasic" type="subscriber.py" name="subscriber_hello_node" output="screen" respawn="true" required="false" respawn_delay="10" />
+
+	</group>
+
+	<group ns="service">
+
+		<node ns="pb" pkg="rosbasic" type="server.py" name="server_node" output="screen" respawn="true" required="false" 					respawn_delay="10" />
+		<node ns="sb" pkg="rosbasic" type="client.py" name="client_node" output="screen" respawn="true" required="false" 
+			respawn_delay="10" />
+
+	</group>
+
+	<group ns="action" >
+		<include ns="action_ns" file="$(find rosbasic)/launch/action.launch" />
+	</group>
+
+	<group ns="rqt" >
+
+		<node pkg="rqt_graph" type="rqt_graph" name="rqt_node" output="screen"/>
+		<param name="ath" value="Aung Thiha" type="str" />
+		<rosparam ns="motor_specification" file="$(find ros_arduino)/yaml/motor_specs.yaml" />
+
+	</group>
+
+</launch>
+
+
+
+
+

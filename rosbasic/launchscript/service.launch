@@ -1,0 +1,7 @@
+<launch>
+
+	<node pkg="rosbasic" type="server.py" name="server_node" output="screen" />
+	<node pkg="rosbasic" type="client.py" name="client_node" output="screen" />
+	<node pkg="rqt_graph" type="rqt_graph" name="rqt_graph_node" output="screen" />
+
+</launch>

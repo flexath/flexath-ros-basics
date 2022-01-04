@@ -1,0 +1,8 @@
+float64 first_number
+float64 second_number
+
+---
+float64 addition_result
+float64 subtraction_result
+float64 multiplication_result
+float64 division_result
